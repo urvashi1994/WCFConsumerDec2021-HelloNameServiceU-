@@ -17,7 +17,6 @@ namespace WCFConsumerDec2021
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             ServiceReference1.HelloNameServiceUClient client = new ServiceReference1.HelloNameServiceUClient("BasicHttpBinding_IHelloNameServiceU");
-           // ServiceReference1.HelloNameServiceUClient client = new ServiceReference1.HelloNameServiceUClient("NetTcpBinding_IHelloNameServiceU");
         
             lblResult.Text = client.HelloName(txtName.Text);
         }

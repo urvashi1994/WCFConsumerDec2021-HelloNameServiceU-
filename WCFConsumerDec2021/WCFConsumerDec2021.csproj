@@ -69,7 +69,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="WebForm1.aspx" />
+    <Content Include="Tcp.aspx" />
+    <Content Include="Http.aspx" />
     <None Include="Connected Services\ServiceReference1\HelloNameServiceU.wsdl" />
     <None Include="Connected Services\ServiceReference1\item.disco" />
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
@@ -97,12 +98,19 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Tcp.aspx.cs">
+      <DependentUpon>Tcp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Tcp.aspx.designer.cs">
+      <DependentUpon>Tcp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Http.aspx.cs">
+      <DependentUpon>Http.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Http.aspx.designer.cs">
+      <DependentUpon>Http.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
